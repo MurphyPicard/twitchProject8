@@ -22,7 +22,7 @@ var handlers = {
             handlers.counter++;
         }//success
       })//ajax
-      .then(function() {
+      .then(()=>{
         $.ajax({
           url: url + '/channels/' + name,
           success: (res)=>{
